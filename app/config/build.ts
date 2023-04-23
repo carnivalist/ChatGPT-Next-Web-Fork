@@ -1,3 +1,4 @@
+const TITLE: string = "张汉的机器人";
 const COMMIT_ID: string = (() => {
   try {
     const childProcess = require("child_process");
@@ -23,5 +24,6 @@ export const getBuildConfig = () => {
 
   return {
     commitId: COMMIT_ID,
+    title: TITLE
   };
 };
